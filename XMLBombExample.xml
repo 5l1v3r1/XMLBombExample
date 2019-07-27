@@ -24,4 +24,4 @@
 	<!ENTITY Stage10 "&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;&Stage9;">
 ]>
 
-<NotADosAttack>&Stage10;</NotADosAttack>
+<NotADosAttack>&Bomb;</NotADosAttack>
